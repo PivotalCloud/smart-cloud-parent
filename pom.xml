@@ -101,6 +101,7 @@
     <modules>
         <module>smart-cloud-boot</module>
         <module>smart-cloud-common</module>
+        <module>smart-cloud-dubbo</module>
     </modules>
 
     <repositories>

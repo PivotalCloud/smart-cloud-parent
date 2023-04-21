@@ -11,7 +11,7 @@
     <artifactId>smart-cloud-boot</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>smart-cloud-boot</name>
-    <description>smart-cloud-boot</description>
+    <description> </description>
     <packaging>pom</packaging>
 
     <properties>
