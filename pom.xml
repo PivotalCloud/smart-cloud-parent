@@ -11,7 +11,7 @@
     <groupId>com.github.smartcloud</groupId>
     <artifactId>smart-cloud-parent</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>open-cloud-parent</name>
+    <name>smart-cloud-parent</name>
     <description>OpenCloud云服务内部依赖管理</description>
     <packaging>pom</packaging>
 
@@ -99,13 +99,15 @@
     </dependencyManagement>
 
     <modules>
+        <module>smart-cloud-authentication</module>
+        <module>smart-cloud-authorization</module>
         <module>smart-cloud-boot</module>
         <module>smart-cloud-common</module>
         <module>smart-cloud-dubbo</module>
     </modules>
 
     <repositories>
-<!--        <repository>
+        <repository>
             <id>central</id>
             <url>https://maven.aliyun.com/nexus/content/groups/public</url>
             <releases>
@@ -124,8 +126,8 @@
             <snapshots>
                 <enabled>true</enabled>
             </snapshots>
-        </repository>-->
-  <!--      <repository>
+        </repository>
+        <repository>
             <id>rdc-releases</id>
             <url>https://packages.aliyun.com/maven/repository/2022020-release-dkLtZC/</url>
             <releases>
@@ -144,11 +146,11 @@
             <snapshots>
                 <enabled>true</enabled>
             </snapshots>
-        </repository>-->
+        </repository>
     </repositories>
 
     <pluginRepositories>
-<!--        <pluginRepository>
+        <pluginRepository>
             <id>central</id>
             <url>https://maven.aliyun.com/nexus/content/groups/public</url>
             <releases>
@@ -167,8 +169,8 @@
             <snapshots>
                 <enabled>true</enabled>
             </snapshots>
-        </pluginRepository>-->
-<!--        <pluginRepository>
+        </pluginRepository>
+        <pluginRepository>
             <id>rdc-releases</id>
             <url>https://packages.aliyun.com/maven/repository/2022020-release-dkLtZC/</url>
             <releases>
@@ -187,11 +189,11 @@
             <snapshots>
                 <enabled>true</enabled>
             </snapshots>
-        </pluginRepository>-->
+        </pluginRepository>
     </pluginRepositories>
 
-    <distributionManagement>
-<!--        <repository>
+<!--    <distributionManagement>
+        <repository>
             <id>rdc-releases</id>
             <name>ReleasesProxy</name>
             <url>https://packages.aliyun.com/maven/repository/2022020-release-dkLtZC/</url>
@@ -200,8 +202,22 @@
             <id>rdc-snapshots</id>
             <name>SnapshotsProxy</name>
             <url>https://packages.aliyun.com/maven/repository/2022020-snapshot-3D7bcq/</url>
-        </snapshotRepository>-->
+        </snapshotRepository>
 
+    </distributionManagement>-->
+
+    <!--tencent-nexus-->
+    <distributionManagement>
+        <snapshotRepository>
+            <id>markapple-metaobject-maven-nexus-snapshot</id>
+            <name>maven-nexus-snapshot</name>
+            <url>https://markapple-maven.pkg.coding.net/repository/metaobject/maven-nexus-snapshot/</url>
+        </snapshotRepository>
+        <repository>
+            <id>markapple-metaobject-maven-nexus-release</id>
+            <name>maven-nexus-release</name>
+            <url>https://markapple-maven.pkg.coding.net/repository/metaobject/maven-nexus-release/</url>
+        </repository>
     </distributionManagement>
 
     <build>
