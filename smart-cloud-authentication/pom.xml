@@ -13,6 +13,7 @@
     <name>smart-cloud-authentication</name>
     <description>smart-cloud-authentication</description>
     <packaging>pom</packaging>
+
     <properties>
         <java.version>8</java.version>
     </properties>
