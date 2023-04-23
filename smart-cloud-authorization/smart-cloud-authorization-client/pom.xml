@@ -4,17 +4,16 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.github.smartcloud</groupId>
-        <artifactId>smart-cloud-parent</artifactId>
+        <artifactId>smart-cloud-authorization</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <groupId>com.github.smartcloud</groupId>
-    <artifactId>smart-cloud-authorization</artifactId>
+    <artifactId>smart-cloud-authorization-client</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>smart-cloud-authorization</name>
-    <description>smart-cloud-authorization</description>
-    <packaging>pom</packaging>
+    <name>smart-cloud-authorization-client</name>
+    <description>smart-cloud-authorization-client</description>
     <properties>
-        <java.version>8</java.version>
+        <java.version>17</java.version>
     </properties>
     <dependencies>
         <dependency>
@@ -28,12 +27,6 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-
-    <modules>
-        <module>smart-cloud-authorization-client</module>
-        <module>smart-cloud-authorization-common</module>
-        <module>smart-cloud-authorization-server</module>
-    </modules>
 
     <build>
         <plugins>
